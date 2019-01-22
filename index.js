@@ -49,28 +49,28 @@ client.on("message", (message) => {
 	   if(responseObject[message.content]) {
     message.channel.send(responseObject[message.content]);
   } 
-	if (message.content === "mine") { 
+	if (message.content === ".mine") { 
         var interval = setInterval (function () {
             // use the message's channel (TextChannel) to send a new message
           message.channel.send(".mine")
            .catch(console.error); // add error handling here
        }, 1 * 725000); 
    }
-		if (message.content === "loot") { 
+		if (message.content === ".loot") { 
         var interval = setInterval (function () {
             // use the message's channel (TextChannel) to send a new message
           message.channel.send(".loot")
            .catch(console.error); // add error handling here
        }, 1 * 195000); 
    }
-		if (message.content === "daily") { 
+		if (message.content === ".daily") { 
         var interval = setInterval (function () {
             // use the message's channel (TextChannel) to send a new message
           message.channel.send(".daily")
            .catch(console.error); // add error handling here
        }, 1 * 1205000); 
    }
-		if (message.content === "salvage") { 
+		if (message.content === ".salvage") { 
         var interval = setInterval (function () {
             // use the message's channel (TextChannel) to send a new message
           message.channel.send(".salvage")
